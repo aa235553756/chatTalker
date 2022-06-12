@@ -1,0 +1,40 @@
+.header{
+    position: absolute;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+    &-logo img{
+        width: 218px;
+        vertical-align: middle;
+    }
+    &-btn{
+        width: 128px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 22px;
+        background: #FF5D50;
+        color: #FFF;
+        text-decoration: none;
+        &:active{
+            background: darken(#FF5D50,10%);
+        }
+    }
+    @include phone{
+        position: relative;
+        width: calc(100% + 32px);
+        padding: 16px;
+        margin-right: -16px;
+        margin-left: -16px;
+        border-bottom: 2px solid #F6CB52;
+        &-logo{
+            display: flex;
+            align-items: center;
+        }
+        &-logo img{
+            width: 130px;
+        }
+    }
+}
