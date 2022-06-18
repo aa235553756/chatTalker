@@ -18,7 +18,15 @@
     border-radius: 27px;
     border: none;
     font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     &:active{
-        background: darken(#56C4C5,10%);
+        background: lighten(#56C4C5,10%);
     }
+}
+
+@mixin d-flex{
+    display: flex;
 }

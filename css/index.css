@@ -60,6 +60,7 @@ table {
 body {
   font-family: "Noto Sans TC";
   color: #221E1F;
+  line-height: 1.5;
 }
 
 a {
@@ -81,6 +82,9 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: calc(100% - 32px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-logo img {
@@ -107,17 +111,18 @@ img {
 }
 
 .header-btn:active {
-  background: #ff2e1d;
+  background: #ff8c83;
 }
 
 @media (max-width: 767px) {
   .header {
     position: relative;
     width: calc(100% + 32px);
-    padding: 16px;
+    padding: 0px 16px;
     margin-right: -16px;
     margin-left: -16px;
     border-bottom: 2px solid #F6CB52;
+    line-height: 70px;
   }
   .header-logo {
     display: -webkit-box;
@@ -129,6 +134,39 @@ img {
   }
   .header-logo img {
     width: 130px;
+  }
+}
+
+.top-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  font-weight: 800;
+  width: 70px;
+  height: 70px;
+  background: #56C4C5;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  .top-btn {
+    width: 50px;
+    height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
 
@@ -204,7 +242,6 @@ img {
 
 .banner-describe {
   font-size: 1.25rem;
-  color: #221E1F;
   line-height: 1.875rem;
 }
 
@@ -507,10 +544,20 @@ img {
   border-radius: 27px;
   border: none;
   font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
 }
 
 .feature-describe-btn:active {
-  background: #3bacad;
+  background: #7cd1d2;
 }
 
 @media (max-width: 767px) {
@@ -719,10 +766,14 @@ img {
   border-radius: 27px;
   border: none;
   font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .footer-bg-btn:active {
-  background: #3bacad;
+  background: #7cd1d2;
 }
 
 .copyright {
@@ -741,4 +792,4 @@ img {
   text-align: center;
   background: #F5F5F5;
 }
-/*# sourceMappingURL=all.css.map */
+/*# sourceMappingURL=index.css.map */
