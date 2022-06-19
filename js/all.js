@@ -1,3 +1,7 @@
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+
 let plan=[
     [
         {people:10000, price:600},
